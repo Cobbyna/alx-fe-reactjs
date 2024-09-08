@@ -29,6 +29,7 @@ describe('TodoList', () => {
         expect(screen.getByText('New Todo Item')).toBeInTheDocument();
         expect(input.value).toBe('');  // Check if input is cleared after adding
     });
+    const name = ' KOBBY';
 
     test('toggles a todo', () => {
         render(<TodoList />);
